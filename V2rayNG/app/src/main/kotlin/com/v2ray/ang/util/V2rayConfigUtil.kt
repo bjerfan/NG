@@ -601,9 +601,9 @@ object V2rayConfigUtil {
                 fragment = V2rayConfig.OutboundBean.OutSettingsBean.FragmentBean(
                     packets = packets,
                     length = settingsStorage?.decodeString(AppConfig.PREF_FRAGMENT_LENGTH)
-                        ?: "50-100",
+                        ?: "10-30",
                     interval = settingsStorage?.decodeString(AppConfig.PREF_FRAGMENT_INTERVAL)
-                        ?: "10-20"
+                        ?: "0-1"
                 )
             )
             fragmentOutbound.streamSettings = V2rayConfig.OutboundBean.StreamSettingsBean(
